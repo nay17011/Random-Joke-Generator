@@ -2,14 +2,15 @@ const jokeText = document.getElementById('joke-text');
 const jokeBtn = document.getElementById('joke-btn');
 
 const jokes = [
-  "Why don't scientists trust atoms? Because they make up everything!",
-  "I told my wife she was drawing her eyebrows too high. She looked surprised.",
-  "Why did the scarecrow win an award? Because he was outstanding in his field!",
-  "I'm reading a book about anti-gravity. It's impossible to put down.",
-  "Why don't eggs tell jokes? They'd crack each other up."
+  { question: "Why did the chicken cross the road?", answer: "To get to the other side!" },
+  { question: "Why don't scientists trust atoms?", answer: "Because they make up everything!" },
+  { question: "What do you call a fake noodle?", answer: "An impasta!" },
+  { question: "Why did the scarecrow win an award?", answer: "Because he was outstanding in his field!" },
+  { question: "What do you call cheese that isn't yours?", answer: "Nacho cheese!" }
 ];
 
 jokeBtn.addEventListener('click', function() {
   const randomIndex = Math.floor(Math.random() * jokes.length);
-  jokeText.textContent = jokes[randomIndex];
+  const joke = jokes[randomIndex];
+  jokeText.innerHTML = joke.question + '<br><br>' + joke.answer;
 });
