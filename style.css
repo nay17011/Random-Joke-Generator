@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -5,48 +7,72 @@
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #0d1b2a;
+  font-family: 'DM Sans', sans-serif;
+  background-color: #050d1a;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 24px;
+  gap: 20px;
+  padding-top: 0;
+  margin-top: -60px;
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-family: 'Syne', sans-serif;
+  font-size: 5rem;
+  font-weight: 800;
   color: #ffd60a;
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  color: #8899aa;
+  font-size: 1rem;
+  margin-top: -10px;
 }
 
 #joke-box {
-  background: #1b2d45;
+  background: #0d1f35;
   border-radius: 16px;
-  padding: 32px;
-  max-width: 600px;
+  padding: 60px 40px;
+  max-width: 700px;
   width: 90%;
   text-align: center;
-  border: 1px solid #2a4066;
+  border: 1.5px solid #1a3a5c;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+
+#joke-box:hover {
+  box-shadow: 0 0 30px rgba(255, 214, 10, 0.25), 0 0 60px rgba(255, 214, 10, 0.1);
+  border-color: #ffd60a;
 }
 
 #joke-text {
-  font-size: 1.2rem;
-  color: #e0e0e0;
-  line-height: 1.6;
+  font-size: 1.25rem;
+  color: #e0eaf5;
+  line-height: 1.7;
 }
 
 #joke-btn {
-  background-color: #ffd60a;
-  color: #0d1b2a;
+  background-color: #60c8ff;
+  color: #050d1a;
   border: none;
-  padding: 14px 32px;
+  padding: 14px 40px;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 700;
   border-radius: 999px;
   cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
 #joke-btn:hover {
-  background-color: #ffe55a;
+  background-color: #90d8ff;
+  transform: scale(1.05);
+}
+
+#joke-btn:active {
+  transform: scale(0.97);
 }
