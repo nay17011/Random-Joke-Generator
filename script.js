@@ -11,7 +11,7 @@ const jokes = [
   { question: "Is Ganga a river or a pond?", answer: "It's a pond cuz GANGA IPO PONDA!!!" },
   { question: "Randalukal marubhoomiyil pettu poi. Avar ini evide jeevikkum?", answer: "Avar parasparam adi koodum... innatt adich adich flat aakum... Innatt aa flat il keri jeevikkum." },
   { question: "Kuttappan jail chaadi. Police enth cheythu?", answer: "Appurethe cellile Rajappane kulipichu Kuttappan aaki." },
-  { question: "Oraal oru island il ottapettu poyi. Aake kayyil ullath oru vaal (sword). Engane rakshappedum?", answer: "Vaal eduthu swayam kuthi chora varuthuka. Aa chora vinna mannil ninnu poomaram. Aa poomaram kondu kappalundaki rekshapedalo." },
+  { question: "Oraal oru island il ottapettu poyi. Aake kayyil ullath oru vaal (sword). Engane rakshappedum?", answer: "Vaal eduthu swayam kuthi chora varuthuka. ചോര വീണ മണ്ണിൽ നിന്നു ഉയർന്നു വന്ന പൂമരം! പൂമരം kondu kappalundaki rekshapedalo." },
   { question: "Oru urumbum oru thimingalom koode adi kooduarnu. Urumbu jayichu. How???", answer: "Urumbu sunscreen thechindarn. Apo whale adichal onnum pattula." },
   { question: "ഒരു അച്ഛനും മകനും മരുഭൂമിയിൽ പെട്ടു പോയി. അച്ഛന്റെ കയ്യിൽ ആകെ ഒരു Dairy Milk ചോക്ലേറ്റ് ഉള്ളൂ. അവർ എങ്ങനെ രക്ഷപെടും?", answer: "അച്ഛൻ ആ Dairy Milk മകന് കൊടുക്കും, മകൻ സന്തോഷവാൻ ആകും, എന്നിട്ട് ആ van ഇൽ കേറി പോകും." },
   { question: "Oraal oru dosa chuttu. But aa dosa parannu poi. Enth kond?", answer: "Kaaranam ath oru plane dosa aayirunnu." },
