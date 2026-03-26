@@ -1,8 +1,8 @@
 const jokeText = document.getElementById('joke-text');
 const jokeBtn = document.getElementById('joke-btn');
 const revealBtn = document.getElementById('reveal-btn');
-const answerBox = document.getElementById('answer-box');
 const answerText = document.getElementById('answer-text');
+const cardInner = document.getElementById('card-inner');
 
 const jokes = [
   { question: "Why did the chicken cross the road?", answer: "To get to the other side!" },
@@ -18,12 +18,13 @@ jokeBtn.addEventListener('click', function() {
 
   jokeText.textContent = joke.question;
   answerText.textContent = joke.answer;
-  answerBox.classList.remove('revealed');
-  revealBtn.style.display = 'block';
-  revealBtn.textContent = 'Reveal Answer';
+  cardInner.classList.remove('flipped');
+  revealBtn.style.visibility = 'visible';
+  revealBtn.style.pointerEvents = 'auto';
 });
 
 revealBtn.addEventListener('click', function() {
-  answerBox.classList.toggle('revealed');
-  revealBtn.textContent = answerBox.classList.contains('revealed') ? 'Hide Answer' : 'Reveal Answer';
+  cardInner.classList.add('flipped');
+  revealBtn.style.visibility = 'hidden';
+  revealBtn.style.pointerEvents = 'none';
 });

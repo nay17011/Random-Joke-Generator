@@ -12,16 +12,16 @@
     <p class="subtitle">Get random jokes to brighten your day!</p>
 
     <div id="joke-box">
-      <p id="joke-text">Click the button to get a joke!</p>
+      <div id="card-inner">
+        <div id="card-front">
+          <p id="joke-text">Click Generate to get a joke!</p>
+        </div>
+        <div id="card-back">
+          <p id="answer-text"></p>
+        </div>
+      </div>
+      <button id="reveal-btn" style="visibility:hidden;">Reveal Answer</button>
     </div>
-
-    <div id="joke-box">
-  <p id="joke-text">Click Generate to get a joke!</p>
-  <div id="answer-box">
-    <p id="answer-text"></p>
-  </div>
-  <button id="reveal-btn" style="display:none;">Reveal Answer</button>
-</div>
 
     <button id="joke-btn">Generate</button>
 
